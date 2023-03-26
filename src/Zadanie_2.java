@@ -16,6 +16,9 @@ Stwórz choinkę, np:
             *
  */
 
+
+import java.util.Random;
+
 public class Zadanie_2 {
     public static void main(String[] args) {
         int w = 13;
@@ -26,7 +29,12 @@ public class Zadanie_2 {
                 System.out.print(" ");
             }
             for (int j = 0; j < i * 2 + 1; j++) {
-                System.out.print("*");
+                Random random = new Random();
+                if (random.nextInt(10)>8) {
+                    System.out.print("o");
+                } else {
+                    System.out.print("*");
+                }
             }
 
             System.out.println();
