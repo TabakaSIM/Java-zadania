@@ -1,5 +1,10 @@
 import java.util.Random;
 
+/*
+Swtórz 10 elementową tablicę, w której znajdują się tylko
+liczby z zakresu 0 - 100 i podzielne przez 7.
+*/
+
 public class Zadanie_1 {
     public static void main(String[] args) {
         Random random = new Random();
