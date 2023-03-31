@@ -16,16 +16,19 @@ public class Zadanie_3_01_04 {
                 tab[i][j]= rng.nextInt(101);
             }
         }
-
+        int min=tab[0][0];
         for (int i=0;i< tab.length;i++){
             for(int j=0;j<tab[0].length;j++){
                 System.out.print(tab[i][j] + " ");
+                if(min>tab[i][j]){
+                    min=tab[i][j];
+                }
                 if (tab[i][j]<10){
                     System.out.print(" ");
                 }
             }
             System.out.println();
         }
-
+        System.out.println("Najmniejsza wartosc to: " + min);
     }
 }
